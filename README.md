@@ -1,7 +1,7 @@
-# Web前端框架
+# 移动Web前端框架
 
 > 本框架涉大量使用[ES2015](http://es6.ruanyifeng.com/#README)语法,如果你还没能掌握 ES2015，你得抓紧了!  
-> 已默认使用flex布局,严禁修改公共样式,页面最外层样式推荐使用 .container 以保证移动端良好的适配性  
+> 已默认使用flex布局,严禁删改公共样式,页面最外层样式推荐使用 .container 以保证移动端良好的适配性  
 > 项目已实现移动端适配,CSS单位统一使用px 作为基础单位  
 > 项目中所用到icon推荐使用框架提供svg用以显示  
 > 
@@ -63,8 +63,9 @@ run build.sh
 .
 ├── build                                       // webpack配置文件
 ├── config                                      // 项目配置
-├── dist                                        // 生产环境输出内容
+├── dist                                        // 输出内容
 ├── node_modules                                // 各种依赖,三方扩展
+├── output                                      // 对外输出内容
 ├── src                                         // 源码目录
 │   ├── api                                     // 网络请求接口集
 │   ├── assets                                  // 静态资源
@@ -76,7 +77,7 @@ run build.sh
 │   │   └── Example.js                          // 示例组件
 │   ├── filter                                  // 过滤器
 │   │   └── filter.js                           // 过滤器实例
-│   ├── pages                                   // 页面
+│   ├── pages                                   // 页面实例
 │   ├── router                                  // 路由
 │   │   └── index.js                            // 路由配置
 │   ├── store                                   // vuex的状态管理
@@ -92,6 +93,7 @@ run build.sh
 │   ├── App.vue                                 // 页面入口文件
 │   ├── main.js                                 // 程序入口文件，加载各种公共组件
 ├── index.html                                  // 入口html文件
+├── build.sh                                    // 打包脚本
 
 ```
  
